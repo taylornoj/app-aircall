@@ -1,7 +1,13 @@
 import React from "react";
+import ArchiveContainer from "../components/ArchiveContainer";
+
 
 function Archive() {
-  return <div>Archive</div>;
+  return(
+    <>
+      <ArchiveContainer />
+      </>
+  );
 }
 
 export default Archive;
