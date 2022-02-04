@@ -5,8 +5,11 @@ import Header from "./components/Header";
 function App() {
   return (
     <>
-    <Header />
-    </>
+    <div className="container">
+      <Header className="container" />
+      <div className="container-view">Hello</div>
+    </div>
+  </>
   );
 }
 
