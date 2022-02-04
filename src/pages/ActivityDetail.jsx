@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
-
 import { useParams } from "react-router-dom";
-
+import CircularUnderload from "../components/CircularUnderload";
 import CallLogDetailContainer from "../components/CallLogDetailContainer";
 
 function ActivityDetail() {
@@ -54,19 +53,18 @@ function ActivityDetail() {
   }, [callbackFetch]);
 
   if (!detailData.id) {
-    return <div style={{ textAlign: "center" }}> Page not found</div>;
-    
+    return <CircularUnderload />
   }
 
   return (
     <>
       <CallLogDetailContainer
         id={detailData.id}
-        createdAt={detailData.created_at}
-        direction={detailData.direction}
-        from={detailData.from}
         to={detailData.to}
         via={detailData.via}
+        from={detailData.from}
+        createdAt={detailData.created_at}
+        direction={detailData.direction}
         duration={detailData.duration}
         archive={detailData.is_archived}
         callType={detailData.call_type}
