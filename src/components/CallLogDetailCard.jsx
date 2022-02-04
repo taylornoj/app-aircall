@@ -90,7 +90,7 @@ function CallLogDetailCard({
           </Grid>
           <Grid item xs={12}>
             <div className={classes.contentContainer}>
-              <Typography variant="body1">Call To: {to}</Typography>
+              <Typography variant="body1">Call To: {to ? to : "Unknown"}</Typography>
               <Typography variant="body1">Via: {via}</Typography>
             </div>
           </Grid>

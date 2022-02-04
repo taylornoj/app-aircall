@@ -104,12 +104,9 @@ function CallLogCard({
                       Tried to call: {to ? to : "Unknown"}
                     </Typography>
                   </div>
-                  <Typography variant="body2" className={classes.dateContainer}>{date} at
-                    <Typography variant="body2" className={classes.timeContainer}>: {time}</Typography>
+                  <Typography variant="body2" className={classes.dateContainer}>{date} at: {time}
                   </Typography>
                 </Grid>
-                {/* <Grid item xs={2}>
-                </Grid> */}
               </Grid>
             </Grid>
             <Grid item xs={2}>
